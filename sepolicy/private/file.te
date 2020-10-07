@@ -9,7 +9,8 @@ type persist_file, file_type;
 
 # sysfs
 type sysfs_battery_supply, sysfs_type, fs_type;
-type sysfs_wireless_supply, sysfs_type, fs_type;
-type sysfs_usb_supply, sysfs_type, fs_type;
-type sysfs_oem, sysfs_type, fs_type;
+type sysfs_fod, sysfs_type, fs_type;
 type sysfs_graphics, sysfs_type, fs_type;
+type sysfs_oem, sysfs_type, fs_type;
+type sysfs_usb_supply, sysfs_type, fs_type;
+type sysfs_wireless_supply, sysfs_type, fs_type;
