@@ -1,3 +1,5 @@
+import /system/etc/init/init.safailnet.rc
+
 on post-fs-data
     write /sys/class/drm/card0-DSI-1/dim_layer_enable 1
 
@@ -15,5 +17,3 @@ on property:init.svc.tcpdump=running
 
 on property:init.svc.vendor.ipacm-diag=running
     stop vendor.ipacm-diag
-
-

@@ -66,6 +66,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Init
+PRODUCT_PACKAGES += \
+    init.safailnet.rc
+
 # Kernel modules
 KERNEL_MODULES_ORIG := $(LOCAL_PATH)/prebuilt/modules
 KERNEL_MODULES_DEST := $(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/modules
