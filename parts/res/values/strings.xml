@@ -16,9 +16,10 @@
 -->
 <resources>
     <!-- Popup camera settings -->
+    <string name="popup_category">Front camera settings</string>
     <string name="popup_led_title">Visual effect</string>
     <string name="popup_led_summary">Show animation when the front camera appears and retracts</string>
-    <string name="popup_title">Front camera effects</string>
+    <string name="popup_title">Effect</string>
     <string name="popup_title_muqin">Xylophone</string>
     <string name="popup_title_yingyan">Condor</string>
     <string name="popup_title_mofa">Magic</string>
