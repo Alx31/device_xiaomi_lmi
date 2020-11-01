@@ -1,0 +1,2 @@
+# Data files
+/data/display(/.*)?      u:object_r:display_data_file:s0

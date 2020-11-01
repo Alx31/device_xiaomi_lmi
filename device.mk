@@ -96,3 +96,7 @@ PRODUCT_COPY_FILES += \
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/lmi/lmi-vendor.mk)
+
+# Livedisplay
+PRODUCT_PACKAGES += \
+    lineage.livedisplay@2.0-service-sdm
