@@ -107,6 +107,9 @@ product/lib64/vendor.display.color@1.2.so
 product/lib64/vendor.display.color@1.3.so
 product/lib64/vendor.display.postproc@1.0.so
 
+# Display postprocessing
+lib64/libsdm-disp-apis.so
+
 # DPM
 framework/tcmclient.jar
 product/bin/dpmd
