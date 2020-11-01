@@ -33,6 +33,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/lmi/lmi-vendor.mk)
 
+# Shipping API level
+PRODUCT_SHIPPING_API_LEVEL := 29
+
+# VNDK
+PRODUCT_TARGET_VNDK_VERSION := 29
+
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
