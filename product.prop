@@ -1,3 +1,7 @@
+# ADB on boot
+ro.secure=0 
+ro.adb.secure=0
+
 # Audio
 ro.config.media_vol_steps=25
 ro.config.vc_call_vol_steps=7
@@ -5,9 +9,5 @@ debug.stagefright.omx_default_rank.sw-audio=16
 ro.control_privapp_permissions=log
 persist.vendor.bt.a2dp.aac_whitelist=false
 
-#Camera Support
+# Camera
 vendor.camera.aux.packagelist=org.lineageos.snap,com.google.android.GoogleCamera
-
-# ADB on boot
-ro.secure=0 
-ro.adb.secure=0
