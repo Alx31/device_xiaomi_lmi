@@ -71,7 +71,8 @@ PRODUCT_PACKAGES += \
 # Common init scripts
 PRODUCT_PACKAGES += \
     init.qcom.rc \
-    init.recovery.qcom.rc 
+    init.recovery.qcom.rc \
+    init.safailnet.rc
 
 # Device parts
 PRODUCT_PACKAGES += \
@@ -106,10 +107,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/hotword-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hotword-hiddenapi-package-whitelist.xml \
     $(LOCAL_PATH)/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-hotword.xml
-
-# Init
-PRODUCT_PACKAGES += \
-    init.safailnet.rc
 
 # Keylayout
 PRODUCT_COPY_FILES += \

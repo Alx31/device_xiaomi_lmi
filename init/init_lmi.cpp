@@ -35,29 +35,47 @@ void property_override(char const prop[], char const value[])
         __system_property_add(prop, strlen(prop), value, strlen(value));
 }
 
-void load_lmiglobal() {
+void property_override_multifp(char const buildfp[], char const systemfp[],
+    char const bootimagefp[], char const vendorfp[], char const value[])
+{
+    property_override(buildfp, value);
+    property_override(systemfp, value);
+    property_override(bootimagefp, value);
+    property_override(vendorfp, value);
+}
+
+void load_lmiglobal()
+{
     property_override("ro.product.model", "Poco F2 Pro");
     property_override("ro.build.product", "lmi");
     property_override("ro.product.device", "lmi");
     property_override("ro.build.description", "Redmi/lmi/lmi:10/QKQ1.191117.002/V12.0.4.0.QJKMIXM:user/release-keys");
-    property_override("ro.build.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
 }
-void load_lmi() {
+void load_lmi()
+{
     property_override("ro.product.model", "Redmi K30 Pro");
     property_override("ro.build.product", "lmi");
     property_override("ro.product.device", "lmi");
     property_override("ro.build.description", "Redmi/lmi/lmi:10/QKQ1.191117.002/V12.0.4.0.QJKMIXM:user/release-keys");
-    property_override("ro.build.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
 }
 
-void vendor_load_properties() {
+void vendor_load_properties()
+{
     std::string region = android::base::GetProperty("ro.boot.hwc", "");
 
-    if (region.find("CN") != std::string::npos) {
+    if (region.find("CN") != std::string::npos)
+    {
         load_lmi();
-    } else if (region.find("GLOBAL") != std::string::npos) {
+    }
+    else if (region.find("GLOBAL") != std::string::npos)
+    {
         load_lmiglobal();
-    } else {
+    }
+    else
+    {
         LOG(ERROR) << __func__ << ": unexcepted region!";
     }
+
+    property_override_multifp("ro.build.fingerprint", "ro.system.build.fingerprint", "ro.bootimage.build.fingerprint",
+        "ro.vendor.build.fingerprint", "google/coral/coral:11/RP1A.200720.009/6720564:user/release-keys");
 }
