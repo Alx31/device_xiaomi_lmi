@@ -11,12 +11,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from lmi device
 $(call inherit-product, device/xiaomi/lmi/device.mk)
 
-# Inherit some common Xtended stuff
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
+# Inherit some common Carbon stuff
+$(call inherit-product, vendor/carbon/config/gsm.mk)
 
 TARGET_USES_PREBUILT_KERNEL := true
 
-PRODUCT_NAME := xtended_lmi
+PRODUCT_NAME := carbon_lmi
 PRODUCT_DEVICE := lmi
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
@@ -24,6 +24,5 @@ PRODUCT_MODEL := F2 Pro
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# Xtended stuff
+# bootanim res
 TARGET_BOOT_ANIMATION_RES := 1080
-XTENDED_MAINTAINER := Schnedi

@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xtended_lmi.mk
+    $(LOCAL_DIR)/carbon_lmi.mk
+
+COMMON_LUNCH_CHOICES := \
+    carbon_lmi-user \
+    carbon_lmi-userdebug \
+    carbon_lmi-eng
