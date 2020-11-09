@@ -112,9 +112,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/gpio-keys.kl
 
-# Lights
+# Light
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-impl.lmi
+    android.hardware.light@2.0-service.lmi
 
 # Livedisplay
 PRODUCT_PACKAGES += \
