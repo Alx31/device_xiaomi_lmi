@@ -158,7 +158,6 @@ persist.vendor.overlay.izat.optin=rro
 persist.vendor.radio.atfwd.start=true
 persist.vendor.sensors.enable.mag_filter=true
 qemu.hw.mainkeys=0
-ro.adb.secure=0
 ro.af.client_heap_size_kbyte=7168
 ro.all_modes.colorpick_adjust=true
 ro.board.platform=kona
@@ -206,3 +205,9 @@ vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.xiaomi.runin,com.xiaomi
 vendor.gatekeeper.disable_spu=true
 vendor.hbm.enable=true
 vendor.mm.enable.qcom_parser=131071999
+
+# ADB on boot plox
+ro.adb.secure=0
+persist.service.adb.enable=1
+persist.service.debuggable=1
+persist.sys.usb.config=mtp,adb
