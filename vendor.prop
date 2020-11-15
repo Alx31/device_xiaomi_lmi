@@ -1,0 +1,149 @@
+# Audio
+audio.deep_buffer.media=true
+audio.offload.buffer.size.kb=32
+audio.offload.gapless.enabled=true
+audio.offload.video=true
+av.offload.enable=true
+persist.audio.button_jack.profile=volume
+persist.audio.button_jack.switch=0
+persist.audio.fluence.speaker=true
+persist.audio.fluence.voicecall=true
+persist.audio.fluence.voicerec=true
+ro.qc.sdk.audio.fluencetype=none
+ro.qc.sdk.audio.ssr=false
+tunnel.audio.encode = true
+use.voice.path.for.pcm.voip=true
+
+# Board
+ro.board.platform=kona
+ro.product.board=kona
+
+# Bluetooth
+persist.vendor.btstack.aac_frm_ctl.enabled=true
+
+# Camera
+persist.camera.privapp.list=org.codeaurora.snapcam 
+persist.vendor.camera.privapp.list=org.codeaurora.snapcam
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.xiaomi.runin,com.xiaomi.cameratest,com.xiaomi.factory.mmi
+
+# Colorpick
+ro.all_modes.colorpick_adjust=true
+ro.colorpick_adjust=true
+
+# Data
+persist.data.df.agg.dl_pkt=10
+persist.data.df.agg.dl_size=4096
+persist.data.df.dev_name=rmnet_usb0
+persist.data.df.dl_mode=5
+persist.data.df.iwlan_mux=9
+persist.data.df.mux_count=8
+persist.data.df.ul_mode=5
+persist.data.wda.enable=true
+persist.rmnet.data.enable=true
+persist.vendor.data.mode=concurrent
+ro.vendor.use_data_netmgrd=true
+
+# Display
+sys.displayfeature_hidl=true
+
+# Fwk
+ro.vendor.qti.va_odm.support=1
+
+# Gatekeeper
+vendor.gatekeeper.disable_spu=true
+
+#GNSS
+ro.config.gnss.support=true
+
+# Graphics
+debug.sf.enable_hwc_vds=1
+debug.sf.latch_unsignaled=1
+ro.opengles.version=196610
+
+# HDMI
+ro.hdmi.enable=true
+
+# Memory
+ro.vendor.qti.va_aosp.support=1
+
+# NFC
+ro.nfc.port=I2C
+
+# OTG
+persist.sys.isUsbOtgEnabled=true
+
+# Radio
+persist.radio.flexmap_type=none
+persist.vendor.radio.atfwd.start=true
+
+# Sensors
+persist.vendor.sensors.enable.mag_filter=true
+
+# Stagefright
+debug.stagefright.ccodec=1
+
+# SurfaceFlinger
+debug.sf.enable_gl_backpressure=1
+debug.sf.early_phase_offset_ns=500000
+debug.sf.early_app_phase_offset_ns=500000
+debug.sf.early_gl_phase_offset_ns=3000000
+debug.sf.early_gl_app_phase_offset_ns=15000000
+
+# Telephony
+telephony.lteOnCdmaDevice=1
+
+# Time
+persist.vendor.delta_time.enable=true
+
+# USB
+sys.usb.controller=a600000.dwc3
+sys.usb.rmnet.func.name=rmnet_bam
+sys.usb.rndis.func.name=rndis_bam
+
+# Vendor
+persist.vendor.cne.feature=1
+persist.vendor.dpm.feature=1
+persist.vendor.overlay.izat.optin=rro
+ro.product.property_source_order=odm,vendor,product,product_services,system
+ro.vendor.bcbc.enable=false
+ro.vendor.cabc.enable=true
+ro.vendor.dfps.enable=true
+vendor.hbm.enable=true
+vendor.mm.enable.qcom_parser=131071999
+
+# Wlan
+ro.hardware.wlan.chip=639x
+ro.hardware.wlan.mimo=1
+ro.hardware.wlan.vendor=qcom
+
+# WFD
+persist.debug.wfd.enable=1
+persist.sys.wfd.virtual=0
+
+# Extras
+config.disable_rtt=true
+fbe.metadata.wrappedkey=true
+persist.backup.ntpServer="0.pool.ntp.org"
+persist.debug.coresight.config=stm-events
+persist.fuse_sdcard=true
+persist.mm.enable.prefetch=true
+persist.sys.force_sw_gles=1
+persist.timed.enable=true
+qemu.hw.mainkeys=0
+ro.af.client_heap_size_kbyte=7168
+ro.boot.dynamic_partitions=true
+ro.gfx.driver.0=com.xiaomi.ugd
+ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.sm8250.api29
+ro.hwui.drop_shadow_cache_size=6
+ro.hwui.gradient_cache_size=1
+ro.hwui.layer_cache_size=48
+ro.hwui.path_cache_size=32
+ro.hwui.r_buffer_cache_size=8
+ro.hwui.text_large_cache_height=1024
+ro.hwui.text_large_cache_width=2048
+ro.hwui.text_small_cache_height=1024
+ro.hwui.text_small_cache_width=1024
+ro.hwui.texture_cache_flushrate=0.4
+ro.hwui.texture_cache_size=72
+ro.kernel.qemu.gles=0
+sys.qca1530=detect
