@@ -22,6 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/lmi/device.mk)
 
 # Inherit some common Carbon stuff.
+$(call inherit-product, vendor/carbon/config/common.mk)
 $(call inherit-product, vendor/carbon/config/gsm.mk)
 
 PRODUCT_NAME := carbon_lmi
